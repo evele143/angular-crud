@@ -1,3 +1,4 @@
+<<<<<<< HEAD
  const { pathsToModuleNameMapper } = require('ts-jest/utils');
  const { compilerOptions } = require('./tsconfig');
 
@@ -92,3 +93,12 @@ module.exports = {
       'jest-preset-angular/HTMLCommentSerializer.js'
     ]
   };
+=======
+module.exports = {
+  moduleNameMapper: {
+    '@core/(.*)': '<rootDir>/src/app/core/$1',
+  },
+  preset: 'jest-preset-angular',
+  setupFilesAfterEnv: ['<rootDir>/setup-jest.ts'],
+};
+>>>>>>> 24648e18603b19e6ba6130b76fd10bc72b55e5f9

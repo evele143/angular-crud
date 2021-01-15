@@ -5,9 +5,14 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
+  "jest": {
+    "preset": "jest-preset-angular",
+    "setupTestFrameworkScriptFile": "<rootDir>/src/test.ts"
   },
   "private": true,
   "dependencies": {
@@ -19,6 +24,7 @@
     "@angular/platform-browser": "~11.0.4",
     "@angular/platform-browser-dynamic": "~11.0.4",
     "@angular/router": "~11.0.4",
+    "@briebug/jest-schematic": "^3.1.0",
     "angularfire2": "^5.4.2",
     "firebase": "^8.2.1",
     "rxjs": "~6.6.0",
@@ -26,11 +32,16 @@
     "zone.js": "~0.10.2"
   },
   "devDependencies": {
+    "@angular-builders/jest": "11.0.0",
     "@angular-devkit/build-angular": "~0.1100.4",
     "@angular/cli": "~11.0.4",
     "@angular/compiler-cli": "~11.0.4",
     "@types/jasmine": "~3.6.0",
+<<<<<<< HEAD
     "@types/jest": "^26.0.20",
+=======
+    "@types/jest": "^26.0.19",
+>>>>>>> 24648e18603b19e6ba6130b76fd10bc72b55e5f9
     "@types/node": "^12.11.1",
     "codelyzer": "^6.0.0",
     "jasmine-core": "~3.6.0",
