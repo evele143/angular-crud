@@ -11,12 +11,16 @@ import { UserComponent } from './user/user.component';
 import { UserListComponent } from './user-list/user-list.component';
 import { UserService } from "./shared/user.service";
 import { environment } from "../environments/environment";
+import { LoginComponent } from './login/login.component';
+import { AdminComponent } from './admin/admin.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     UserComponent,
-    UserListComponent
+    UserListComponent,
+    LoginComponent,
+    AdminComponent
   ],
   imports: [
     BrowserModule,

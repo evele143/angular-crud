@@ -1,6 +1,8 @@
 import { Injectable } from '@angular/core';
 import { FormControl,FormGroup,Validators } from "@angular/forms";
 import { AngularFireDatabase,AngularFireList } from "angularfire2/database";
+///login
+// import { User } from '../login';
 
 
 @Injectable({
@@ -53,5 +55,22 @@ export class UserService {
   deleteUser($key:any){
     this.usersList.remove($key);
   }
+
+  // //login
+  // public login(userInfo: User){
+  //   localStorage.setItem('ACCESS_TOKEN', "access_token");
+  // }
+
+
+  // public isLoggedIn(){
+  //   return localStorage.getItem('ACCESS_TOKEN') !== null;
+
+
+  // }
+
+
+  // public logout(){
+  //   localStorage.removeItem('ACCESS_TOKEN');
+  // }
 
 }

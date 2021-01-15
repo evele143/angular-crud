@@ -4,6 +4,12 @@
   "newProjectRoot": "projects",
   "projects": {
     "angular-crud": {
+      "test": {
+        "builder": "@angular-builders/jest:run",
+        "options": {
+          "configPath": "./jest.config.js"
+          }
+        },
       "projectType": "application",
       "schematics": {
         "@schematics/angular:application": {
